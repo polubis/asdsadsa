@@ -1,0 +1,25 @@
+﻿<Window x:Class="Cukiernia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="514.779" Width="699.265">
+    <Grid>
+        <TextBox HorizontalAlignment="Right" Width="254" Margin="0,-2,249,130" x:Name="Wyswietlacz" RenderTransformOrigin="0.5,0.5" >
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.275"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.745"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <WrapPanel HorizontalAlignment="Right" Width="232" Margin="0,212,0,0">
+            <Label Width="108" FontWeight="Bold">Nazwa przepisu:</Label>
+            <TextBox x:Name="pobierzNazwe" Margin="10,0,0,0" Width="112" Height="27"></TextBox>
+            <Label Margin="0,10,0,0" FontWeight="Bold">Czas przyg.w min</Label>
+            <TextBox x:Name="pobierzCzas" Margin="10,10,0,0" Width="112" Height="27"></TextBox>
+            <Button Click="Dodaj" Margin="50" Height="38" Width="91" FontWeight="Bold">Dodaj</Button>
+        </WrapPanel>
+        <Frame x:Name="Ramka" Margin="0,0,279,0"/>
+    </Grid>
+</Window>
